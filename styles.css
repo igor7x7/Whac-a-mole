@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(143, 84, 238);
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+.titulo, p{
+    font-size: 32px;
+}
+.pontuacao{
+    width: 303px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+.tempoRestante{
+    width: 303px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.grid{
+    width: 606px;
+    height: 606px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: darkslateblue;
+}
+
+.quadrado{
+    width: 200px;
+    height: 200px;
+    border: solid black 1px
+}
+
+.topeira{
+    background-image: url('./imgs/topeira.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.instrucao p{
+    font-size: 32px;
+}
+
+@media screen and (max-width: 400px) {
+    .titulo p{
+        font-size: 32px;
+        margin: none;
+    }
+    .grid{
+       width: 360px; 
+       height: 360px;
+       justify-content: center;
+       background-color: darkslateblue;
+    }
+    .quadrado{
+        width: 116px;
+        height: 116px;
+    }
+}
