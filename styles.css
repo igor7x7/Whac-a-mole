@@ -60,7 +60,7 @@ header{
     font-size: 32px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
     .titulo p{
         font-size: 32px;
         margin: none;
